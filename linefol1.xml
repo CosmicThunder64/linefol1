@@ -9,6 +9,21 @@
     <statement name="DO">
       <block type="controls_if" id="55" inline="false">
         <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="179" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="186">
+                <field name="LIGHT">YELLOW</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="196">
+                <field name="NUM">45</field>
+              </block>
+            </value>
+          </block>
+        </value>
         <statement name="DO0">
           <block type="movement_forward" id="111">
             <next>
