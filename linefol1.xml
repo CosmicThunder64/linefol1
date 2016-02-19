@@ -1,35 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="27" inline="false" x="29" y="-14">
+  <block type="controls_whileUntil" id="1" inline="false" x="29" y="-14">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="34">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="55" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="179" inline="true">
+          <block type="logic_compare" id="4" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_spectrometer" id="186">
-                <field name="LIGHT">YELLOW</field>
+              <block type="sensor_spectrometer" id="5">
+                <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="196">
-                <field name="NUM">45</field>
+              <block type="math_number" id="6">
+                <field name="NUM">80</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="111">
+          <block type="movement_forward" id="7">
             <next>
-              <block type="robot_delay" id="122" inline="true">
+              <block type="robot_delay" id="8" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="132">
+                  <block type="math_number" id="9">
                     <field name="NUM">100</field>
                   </block>
                 </value>
@@ -38,7 +38,7 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_left" id="143"></block>
+          <block type="movement_left" id="10"></block>
         </statement>
       </block>
     </statement>
