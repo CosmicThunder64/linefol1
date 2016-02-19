@@ -14,12 +14,12 @@
             <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_spectrometer" id="5">
-                <field name="LIGHT">BLUE</field>
+                <field name="LIGHT">YELLOW</field>
               </block>
             </value>
             <value name="B">
               <block type="math_number" id="6">
-                <field name="NUM">80</field>
+                <field name="NUM">43</field>
               </block>
             </value>
           </block>
@@ -34,11 +34,11 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_right" id="20">
+                  <block type="movement_right" id="10">
                     <next>
-                      <block type="robot_delay" id="22" inline="true">
+                      <block type="robot_delay" id="11" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="29">
+                          <block type="math_number" id="12">
                             <field name="NUM">50</field>
                           </block>
                         </value>
@@ -51,11 +51,11 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_left" id="10">
+          <block type="movement_left" id="13">
             <next>
-              <block type="robot_delay" id="43" inline="true">
+              <block type="robot_delay" id="14" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="44">
+                  <block type="math_number" id="15">
                     <field name="NUM">50</field>
                   </block>
                 </value>
